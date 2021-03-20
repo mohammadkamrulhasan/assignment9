@@ -27,8 +27,7 @@ function App() {
       <p>Name: {loggedInUser.name}</p>
       <Router>
         <Header />
-        <Transport></Transport>
-        <Home></Home>
+        <Transport></Transport>       
         <Switch>
           <Route path="/home">
             <Home></Home>
