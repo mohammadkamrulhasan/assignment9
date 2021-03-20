@@ -10,8 +10,8 @@ const Ride = () => {
             <h1>Let's book a {rideType} Ride.</h1>
 
             <form >
-                <input type="text" placeholder="Pick From" onBlur="" ></input>
-                <input type="text" placeholder="Pick To" onBlur="" ></input>
+                <input type="text" placeholder="Pick From" onBlur="" required></input>
+                <input type="text" placeholder="Pick To" onBlur="" required></input>
                 <br/>
                 <input type="submit" value="Search" ></input>
 
