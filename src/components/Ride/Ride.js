@@ -6,7 +6,7 @@ const Ride = () => {
     const {rideType} = useParams();
     return (
         <div style={{textAlign: 'center'}}>
-            <h1>Let's book a {rideType} Room.</h1>
+            <h1>Let's book a {rideType} Ride.</h1>
             <p>Want a <Link to="/home">different ride?</Link> </p>
         </div>
     );

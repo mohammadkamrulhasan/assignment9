@@ -12,6 +12,7 @@ import Login from './components/Login/Login';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Ride from './components/Ride/Ride';
+import Blog from './components/Blog/Blog';
 
 
 
@@ -31,6 +32,12 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/ride">
+            <Ride/>
+          </Route>
+          <Route path="/blog">
+            <Blog />
           </Route>
           <Route path="/login">
             <Login />

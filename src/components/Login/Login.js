@@ -45,7 +45,7 @@ const Login = () => {
 
     return (
         <div>
-            <h1>This is Login</h1>
+            <h1>Login Here</h1>
             <button onClick={handleGoogleSignIn}>Google Sign in</button>
             <br/>
             <button onClick={handleGitSignIn}>Github Sign in</button>
