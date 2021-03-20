@@ -1,6 +1,22 @@
 .container{
     display: flex;
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 200px;
     gap: 30px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.bike img{
+    border-radius: 10px;
+}
+.taxi img{
+    border-radius: 10px;
+}
+.bus img{
+    border-radius: 10px;
+}
+.train img{
+    border-radius: 10px;
 }
