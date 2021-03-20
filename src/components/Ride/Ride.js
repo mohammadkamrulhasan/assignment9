@@ -1,10 +1,13 @@
 import React from 'react';
+import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
-const Ride = (props) => {
-    // const {ride}=props.ride;
+const Ride = () => {
+    const {rideType} = useParams();
     return (
-        <div>
-            <h1>This is ride page</h1>
+        <div style={{textAlign: 'center'}}>
+            <h1>Let's book a {rideType} Room.</h1>
+            <p>Want a <Link to="/home">different ride?</Link> </p>
         </div>
     );
 };
