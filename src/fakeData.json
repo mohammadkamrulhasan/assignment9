@@ -1,0 +1,12 @@
+[{"id":1,"vehicleName":"bike","PickFrom":"mirpur","PickTo":"mohammadpur","vehicleImage":"../../image/bike.jpg","person":1,"Cost"100},
+{"id":2,"vehicleName":"taxi","PickFrom":"jikatola","PickTo":"mohammadpur","vehicleImage":"../../image/taxi.png","person":4,"Cost":150},
+{"id":3,"vehicleName":"bus","PickFrom":"motijheel","PickTo":"hazaribag","vehicleImage":"../../image/bus.jpg","person":50,"Cost":30},
+{"id":4,"vehicleName":"train","PickFrom":"kamlapur","PickTo":"tongi","vehicleImage":"../../image/train.jpeg","person":200,"Cost":20},
+{"id":5,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":6,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":7,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":8,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":9,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":10,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":11,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1},
+{"id":12,"vehicleName":"","PickFrom":"","PickTo":"","vehicleImage":"","person":1,"Cost":1}]

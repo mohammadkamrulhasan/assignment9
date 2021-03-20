@@ -10,6 +10,8 @@ import {
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Login from './components/Login/Login';
 import Home from './components/Home/Home';
+import Contact from './components/Contact/Contact';
+import Ride from './components/Ride/Ride';
 
 
 
@@ -24,7 +26,7 @@ function App() {
       <p>Name: {loggedInUser.name}</p>
       <Router>
         <Header />
-        {/* <Transport></Transport> */}
+        <Transport></Transport>
         <Home></Home>
         <Switch>
           <Route path="/home">
@@ -33,11 +35,14 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/book/:bedType">
-            
+          <PrivateRoute path="/ride/:rideType">
+            <Ride></Ride>
           </PrivateRoute>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
           <Route exact path="/">
-            
+            <Home></Home>
           </Route>
         </Switch>
       </Router>

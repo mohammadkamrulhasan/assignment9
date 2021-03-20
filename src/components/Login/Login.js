@@ -28,10 +28,27 @@ const Login = () => {
             console.log(errorMessage);
           });
     }
+    const handleGitSignIn = () => {
+        var gitProvider = new firebase.auth.GithubAuthProvider();
+        firebase.auth().signInWithPopup(gitProvider).then(function(result) {
+            const {displayName, email} = result.user;
+            const signedInUserGit = {name: displayName, email} 
+            setLoggedInUser(signedInUserGit);
+            console.log(loggedInUser);
+            history.replace(from);
+            // ...
+          }).catch(function(error) {
+            const errorMessage = error.message;
+            console.log(errorMessage);
+          });
+    }
+
     return (
         <div>
             <h1>This is Login</h1>
             <button onClick={handleGoogleSignIn}>Google Sign in</button>
+            <br/>
+            <button onClick={handleGitSignIn}>Github Sign in</button>
         </div>
     );
 };
