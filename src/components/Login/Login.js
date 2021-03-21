@@ -144,9 +144,10 @@ const Login = () => {
             {
               user.success && <p style={{color:'green'}}> User {newUser ? 'created' : 'loggedIn'} successfully</p>
             }
-            
+            <p>Or different Option Below</p> 
           </div>
-          <div className="container">          
+          <div className="container">      
+          
             <button onClick={handleGoogleSignIn}>Google Sign in</button>
             <br/>
             <button onClick={handleGitSignIn}>Github Sign in</button>
