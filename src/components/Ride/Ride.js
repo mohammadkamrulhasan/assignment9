@@ -7,7 +7,7 @@ const Ride = () => {
     const { rideType } = useParams();
 
     const history = useHistory();
-    const onNavigateTravel=()=>{
+    const onNavigateTravel = () => {
         history.push("/travel");
     }
     return (
@@ -16,10 +16,29 @@ const Ride = () => {
             <div className="container">
                 <div>
                     <form >
-                        <input type="text" placeholder="Pick From" onBlur="" required></input>
+                        {/* <input type="text" placeholder="Pick From" onBlur="" required></input>
                         <br />
                         <input type="text" placeholder="Pick To" onBlur="" required></input>
                         <br />
+                        <input type="submit" value="Search" onClick={onNavigateTravel} ></input> */}
+                        <label for="cars">Pick From:</label>
+
+                        <select id="cars">
+                            <option value="Mohammadpur" selected>Mohammadpur</option>
+                            <option value="Motijheel">Motijheel</option>
+                            <option value="Azimpur">Azimpur</option>
+                            <option value="Uttara" >Uttara</option>
+                        </select>
+                        <br/>
+                        <label for="bike">Pick To:</label>
+
+                        <select id="bike">
+                            <option value="Tongi" selected>Tongi</option>
+                            <option value="Dhanmondi">Dhanmondi</option>
+                            <option value="Hazaribag">Hazaribag</option>
+                            <option value="Wari" >Wari</option>
+                        </select>
+                        <br/>
                         <input type="submit" value="Search" onClick={onNavigateTravel} ></input>
 
                     </form>
@@ -27,11 +46,11 @@ const Ride = () => {
 
                 </div>
                 <div>
-                <Map></Map>
+                    <Map></Map>
                 </div>
             </div>
 
-           
+
         </div>
     );
 };
