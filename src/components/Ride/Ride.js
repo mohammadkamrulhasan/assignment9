@@ -16,11 +16,6 @@ const Ride = () => {
             <div className="container">
                 <div>
                     <form >
-                        {/* <input type="text" placeholder="Pick From" onBlur="" required></input>
-                        <br />
-                        <input type="text" placeholder="Pick To" onBlur="" required></input>
-                        <br />
-                        <input type="submit" value="Search" onClick={onNavigateTravel} ></input> */}
                         <label for="cars">Pick From:</label>
 
                         <select id="cars">
