@@ -13,6 +13,7 @@ import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
 import Ride from './components/Ride/Ride';
 import Blog from './components/Blog/Blog';
+import Travel from './components/Travel/Travel';
 
 
 
@@ -27,7 +28,7 @@ function App() {
       <p>Name: {loggedInUser.name}</p>
       <Router>
         <Header />
-        <Transport></Transport>       
+        {/* <Transport></Transport>        */}
         <Switch>
           <Route path="/home">
             <Home></Home>
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home></Home>
+          </Route>
+          <Route exact path="/travel">
+            <Travel></Travel>
           </Route>
         </Switch>
       </Router>
